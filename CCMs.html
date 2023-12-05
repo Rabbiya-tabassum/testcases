@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+        @import url(
+'https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+  
+        /* First make all margin and padding 0 */
+        * {
+            margin: 0px;
+            padding: 0px;
+            /*background-color: rgb(4 7 16);*/
+        }
+        body {
+    background-image: url('gif.gif'); /* Replace 'your-gif.gif' with the actual path or URL of your GIF */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Makes the background fixed when scrolling */
+}
+
+  
+        /* Second work on image*/
+        header img {
+            display: block;
+            height: 84px;
+            cursor: pointer;
+            margin-right: auto;
+        }
+  
+        /* Changes the styling of links if necessary */
+        li,
+        a,
+        button {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 800;
+            font-size: 16px;
+            color: whitesmoke;
+            text-decoration: none;
+        }
+  
+        /* Now start positioning the links and images 
+           according to your convinence */
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 10%;
+        }
+  
+        .navigate_links {
+            list-style: none;
+        }
+  
+        .navigate_links li {
+            display: inline-block;
+            padding: 10px 20px;
+        }
+  
+        .navigate_links li a {
+            font-weight: bold; /* Make the menu items bold */
+            color: white; /* Make the menu items white */
+            transition: all 0.3s ease-in-out 0s;
+        }
+  
+        /* Add some transition to make navigation 
+           bar attractive */
+        .navigate_links li a:hover {
+            color: greenyellow;
+            border: 2px solid blue;
+            box-shadow: 3px 3px 3px red, 3px 3px 3px blue;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 12px;
+        }
+  
+        button {
+            margin-left: 70px;
+            padding: 9px 12px;
+            border-radius: 15px;
+            background-color: rgb(89, 61, 248);
+            color: rgb(243, 236, 236);
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out 0s;
+        }
+  
+        button:hover {
+            background-color: rgb(219, 221, 81);
+            color: black;
+        }
+        a h1:hover{
+          color: greenyellow;
+            border: 2px solid blue;
+            box-shadow: 3px 3px 3px red, 3px 3px 3px blue;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 12px;
+
+        }
+        .Signup{
+          color: white;
+          
+        }
+        .Signup input{
+          color: white;
+        }
+        .Brand{
+            text-align: center;
+            color: rgb(236, 238, 234);
+        }
+        .mission{
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            
+            padding-left: 35px;
+            padding-bottom: 35px;
+        }
+        .certifications button{
+            padding-left: 30px;
+            border-radius: 5px;
+        }
+        .Subscribe button{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+  
+<body>
+    <header>
+        <img class="logo" src="flogo.png" alt="Loading image" height="200" width="100" >
+        <nav>
+            <ul class="navigate_links">
+                <li><a href="CCMs.html">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            
+        </nav>
+        <a class="Subscribe" href="#"> 
+            <button>Subscribe</button> 
+        </a>
+        
+    </header>
+    <div class="banner">
+        <marquee  behavior="" direction="", style="color: rgb(241, 241, 245);" font-family="Courier New', Courier, monospace" ><strong>"Providing you with Valueable and Secure Certification Management System."<strong></marquee>
+    </div>
+    <br>
+  <div class="Brand" href="brand"><h1> <strong>Cyber Certifications Management System</strong></h1></div><br>
+  <div class="mission"><br>
+    <h2 style="color: greenyellow;">Earn Your Cybersecurity Certification</h2><br>
+    <p>Your cybersecurity skills are in higher demand than ever before. But these days,<br>  your knowledge, skills and abilities aren't always enough...</p>
+    <br><br>
+    <p>Employers want proof you have the expertise they need. They want to see your <br>
+    cybersecurity certifications. They want to know you're continually improving your skills to <br>
+    stay up on the latest threats and technology.</p>
+    <br><br>
+    <p>Certify your skills through CCMS - the emerging leader in cybersecurity certifications! CCMS <br>
+    certifications, such as the renowned CISSP, are the industry's most widely recognized and <br>
+    sought-offer achievements for professionals at all stages of their cybersecurity careers.</p>
+
+    <br><br><br>
+
+    <h2 style="color: greenyellow;">Not sure where to start?</h2><br>
+    <p>The CCMS Cybersecurity Qualification Pathfinder will match you with the certifications that can help you most in your career right now.</p>
+    <br>
+    <a class="certifications" href="certifications.html"> 
+        <button>Find certifications for you.</button> 
+    </a><br><br>
+    <p>As a first step, become an CCMS Candidate and enjoy the benefits this brings, including the opportunity to learn, grow and network before you become fully certified.</p>
+
+    </div>
+    
+  
+  
+  
+  
+
+</body>
+</html>

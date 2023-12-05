@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+        /* First make all margin and padding 0 */
+        * {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(4 7 16);
+        }
+
+        /* Second work on image*/
+        header img {
+            display: block;
+            height: 84px;
+            cursor: pointer;
+            margin-right: auto;
+        }
+
+        /* Changes the styling of links if necessary */
+        li,
+        a,
+        button {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 800;
+            font-size: 16px;
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+        /* Now start positioning the links and images 
+           according to your convinence */
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 10%;
+        }
+
+        .navigate_links {
+            list-style: none;
+        }
+
+        .navigate_links li {
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
+        .navigate_links li a {
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        /* Add some transition to make navigation 
+           bar attractive */
+        .navigate_links li a:hover {
+            color: greenyellow;
+            border: 2px solid blue;
+            box-shadow: 3px 3px 3px red, 3px 3px 3px blue;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 12px;
+        }
+
+        button {
+            margin-left: 70px;
+            padding: 9px 12px;
+            border-radius: 15px;
+            background-color: rgb(89, 61, 248);
+            color: rgb(243, 236, 236);
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        button:hover {
+            background-color: rgb(219, 221, 81);
+            color: black;
+        }
+
+        a h1:hover {
+            color: greenyellow;
+            border: 2px solid blue;
+            box-shadow: 3px 3px 3px red, 3px 3px 3px blue;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 12px;
+
+        }
+
+        .login {
+            color: white;
+            text-align: center;
+        }
+
+        .login input {
+            color: white;
+        }
+        .Brand{
+            text-align: center;
+        }
+        .Subscribe button{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="logo2.jpeg" alt="Loading image" height="200" width="100" >
+        <nav>
+            <ul class="navigate_links">
+                <li><a href="CCMs.html">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+        </nav>
+        <a class="Subscribe" href="#">
+            <button>Subscribe</button>
+        </a>
+
+    </header>
+    <div class="banner">
+        <marquee  behavior="" direction="", style="color: blue;" font-family="Courier New', Courier, monospace" ><strong>"Providing you with Valueable and Secure Certification Management System."<strong></marquee>
+    </div>
+    <br>
+    <div><a class="Brand" href="brand">
+            <h1> Cyber Certifications Management System</h1>
+        </a></div><br>
+    <form action="login.php" method="post">
+        <div class="login">
+            <h1 style="color: greenyellow;">Login</h1><br>
+            <hr><br>
+            <p>Please fill the form to login into your account.</p><br>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required><br><br>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required><br><br>
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label><br>
+
+            
+
+            <div class="clearfix">
+                <button type="submit" class="signupbtn">Login</button>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>
